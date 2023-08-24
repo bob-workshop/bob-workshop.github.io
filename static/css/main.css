@@ -2002,6 +2002,10 @@ iframe.video {
 	width: 230px;
 }
 
+#speakers {
+	text-align: center;
+}
+
 #people {
 	text-align: center;
 }
