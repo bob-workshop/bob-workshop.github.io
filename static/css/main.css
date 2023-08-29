@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400|Passion+One:400");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
 
 /*
 	Full Motion by TEMPLATED
@@ -197,10 +198,10 @@ input,
 select,
 textarea {
 	color: #111;
-	font-family: "Source Sans Pro", sans-serif;
-	font-size: 13pt;
+	font-family: "Roboto", sans-serif;
+	font-size: 12.5pt;
 	font-weight: 300;
-	line-height: 1.65;
+	line-height: 1.60;
 }
 
 @media screen and (max-width: 1680px) {
@@ -1922,6 +1923,7 @@ body.is-loading #banner:before {
 	cursor: pointer;
 	font-size: 16px;
 	line-height: 20px;
+	font-family: "Roboto", sans-serif;
 	font-weight: 600;
 	border-radius: 8px;
 	padding: 0 23px;

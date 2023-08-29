@@ -61,7 +61,7 @@ def start_from_terminal(app):
 	start_tornado(app, opts.port)
 
 # Obtain the flask app object
-app = Flask(__name__)
+app = Flask(__name__, template_folder="")
 
 @app.route('/image_index', methods=['POST'])
 def image_index():
