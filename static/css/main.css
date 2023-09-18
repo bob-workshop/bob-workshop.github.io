@@ -1768,7 +1768,8 @@ body.is-loading #banner:before {
 #quick-links,
 #callforpaper,
 #schedule,
-#grants,
+/* #grants, */
+#people,
 #acknowledgement,
 .background-color1 {
 	background-color: #fff;
@@ -1777,7 +1778,6 @@ body.is-loading #banner:before {
 #abstract,
 #importantdates,
 #speakers,
-#people,
 .background-color2 {
 	background-color: #ECECEC;
 }
