@@ -1697,8 +1697,9 @@ body.is-loading #banner:before {
 #importantdates,
 #schedule,
 #speakers,
-#grants,
+#panelist,
 #people,
+#grants,
 #acknowledgement{
 	padding: 2em 0 2em 0;
 }
@@ -1716,6 +1717,7 @@ body.is-loading #banner:before {
 #importantdates .inner,
 #schedule .inner,
 #speakers .inner,
+#panelist .inner,
 #people .inner,
 #grants .inner,
 #acknowledgement .inner{
@@ -1768,8 +1770,7 @@ body.is-loading #banner:before {
 #quick-links,
 #callforpaper,
 #schedule,
-/* #grants, */
-#people,
+#panelist
 #acknowledgement,
 .background-color1 {
 	background-color: #fff;
@@ -1778,6 +1779,7 @@ body.is-loading #banner:before {
 #abstract,
 #importantdates,
 #speakers,
+#people,
 .background-color2 {
 	background-color: #ECECEC;
 }
@@ -1789,6 +1791,7 @@ body.is-loading #banner:before {
 #callforpaper .row-half,
 #schedule .row-half,
 #speakers .row-half,
+#panelist .row-half,
 #people .row-half,
 #importantdates .row-half,
 #grants .row-half,
@@ -1804,6 +1807,7 @@ body.is-loading #banner:before {
 #callforpaper .row,
 #schedule .row,
 #speakers .row,
+#panelist .row,
 #people .row,
 #importantdates .row,
 #grants .row,
@@ -2005,6 +2009,10 @@ iframe.video {
 }
 
 #speakers {
+	text-align: center;
+}
+
+#panelist {
 	text-align: center;
 }
 
