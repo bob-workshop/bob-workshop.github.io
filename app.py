@@ -1,82 +1,59 @@
 #!/usr/bin/env python
-'''
 
-'''
-import datetime
-import glob
-import io as StringIO
+import argparse
 import logging
-import math
-import optparse
-import os
-import pickle as cPickle
-import random
-import sys
-import urllib
-from collections import OrderedDict
-from math import sqrt
-from time import time
 
-import flask
-import h5py
-import numpy as np
-import six
 import tornado.httpserver
 import tornado.wsgi
-import werkzeug
-from PIL import Image
-from flask import render_template, abort, Flask, url_for, request, jsonify, app
-from jinja2 import TemplateNotFound
-from scipy.io import loadmat
-from skimage.color import label2rgb, color_dict
-
-
-def start_tornado(app, port=5000):
-	http_server = tornado.httpserver.HTTPServer(tornado.wsgi.WSGIContainer(app))
-	http_server.listen(port)
-	print("Tornado server starting on port {}".format(port))
-	tornado.ioloop.IOLoop.current().start()
-
-def start_from_terminal(app):
-	"""
-	Parse command line options and start the server.
-	"""
-	parser = optparse.OptionParser()
-	parser.add_option(
-		'-d', '--debug',
-		help="enable debug mode",
-		action="store_true", default=False)
-	parser.add_option(
-		'-p', '--port',
-		help="which port to serve content on",
-		type='int', default=5000)
-	parser.add_option(
-		'-g', '--gpu',
-		help="use gpu mode, specify gpu to use",
-		type='int', default=-1)
-
-	opts, args = parser.parse_args()
-	app.debug = opts.debug
-	
-	start_tornado(app, opts.port)
+from flask import Flask, render_template
 
 # Obtain the flask app object
 app = Flask(__name__, template_folder="")
 
-@app.route('/image_index', methods=['POST'])
-def image_index():
-	if request.method == 'POST':
-		json_dictionary = request.get_json()
-		
 
-@app.route('/', defaults={'page': 'index'})
+def server_start(app: Flask, port: int):
+    container = tornado.wsgi.WSGIContainer(app)
 
-def show(page):
-	print ('render')
-	return render_template('index.html')
+    server = tornado.httpserver.HTTPServer(container)
+    server.listen(port)
 
-if __name__ == '__main__':	
- 	logging.getLogger().setLevel(logging.INFO)
- 	start_from_terminal(app)
- 	# data_h5_file_pp.close()
- 	# sess.close()
+    logging.info(f"Tornado server starting at http://localhost:{port}")
+
+    tornado.ioloop.IOLoop.current().start()
+
+
+@app.route("/imprint")
+def render_imprint():
+    logging.info("render page: imprint")
+    return render_template("imprint.html")
+
+
+@app.route("/")
+def render_index():
+    logging.info("render page: index")
+    return render_template("index.html")
+
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "-p", "--port", type=int, default=5000, help="Port used by the web server"
+    )
+    parser.add_argument(
+        "-d", "--debug", action="store_true", default=False, help="Enable debug mode"
+    )
+
+    args = parser.parse_args()
+
+    loglevel = logging.DEBUG if args.debug else logging.INFO
+    logging.basicConfig(level=loglevel)
+
+    app.debug = args.debug
+    if args.debug:
+        logging.info(f"Enabling flask debugging")
+
+    server_start(app, port=args.port)
+
+
+if __name__ == '__main__':
+    main()

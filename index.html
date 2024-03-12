@@ -3,29 +3,23 @@
 <html>
 
 <head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-155215010-2"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		gtag('js', new Date());
-
-		gtag('config', 'UA-155215010-2');
-	</script>
-
 	<title>BoB Workshop</title>
-	<link rel="icon" type="image/x-icon" href="static/images/favicon.svg">
+
 	<meta charset="utf-8" />
+	<link rel="icon" type="image/x-icon" href="static/images/logos/favicon.svg" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<link rel="stylesheet" href="static/css/main.css" />
-	<link rel="stylesheet" type="text/css" href="static/vendor/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="static/css/main.css" />
-	<link rel="stylesheet" href="static/css/leaflet.css" />
 
-	<link rel="stylesheet" type="text/css" href="static/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" />
 
-	<link rel="stylesheet" type="text/css" href="static/slick/slick.css" />
-	<link rel="stylesheet" type="text/css" href="static/slick/slick-theme.css" />
+	<link rel="stylesheet" href="static/css/main.css" />
+
+	<link rel="stylesheet" href="static/thirdparty/slick-1.8.1/slick.css" />
+	<link rel="stylesheet" href="static/thirdparty/slick-1.8.1/slick-theme.css" />
+
+	<link rel="stylesheet" href="static/thirdparty/fontawesome-6.4.2/css/fontawesome.min.css" />
+	<link rel="stylesheet" href="static/thirdparty/fontawesome-6.4.2/css/brands.min.css" />
+	<link rel="stylesheet" href="static/thirdparty/fontawesome-6.4.2/css/solid.min.css" />
 </head>
 
 <body id="top">
@@ -33,9 +27,8 @@
 	<section id="banner">
          <!-- <div class="logos">
             <div class="row">
-                <a href="https://uni-freiburg.de/"><img src="static/images/logos/ufr_blue_full.svg" alt="UFR Logo" style="height: 100%;"></a>
-                <a href="https://www.furg.br/"><img src="static/images/logos/furg_black.png" alt="FURG Logo" style="height: 75%;"></a>
-                <a href="https://www.utn.de/"><img src="static/images/logos/utn_black.svg" alt="UTN Logo" style="height: 75%"></a>
+				<!-- <a href="https://rl.uni-freiburg.de"><img src="static/images/logos/ufr_blue_full.svg" alt="UFR Logo" style="height: 100%;" /></a>
+				<img src="static/images/logos/ellis_freiburg_black.png" alt="ELLIS Freiburg Logo" /> -->
             </div>
         </div> -->
 
@@ -44,49 +37,72 @@
 		</video> -->
 
 		<div class="image-big" id="myVideo">
-			<img src="static/images/iros24_logo.webp" width="100%" height="100%"/>
+			<img src="static/images/figures/iros24_logo.webp" width="100%" height="100%"/>
 		</div>
 
+        <!-- <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" poster="static/images/figures/iros24_logo.webp">
+            <source src="static/images/figures/iros24_logo.webp" />
+        </video> -->
+
 		<div class="inner">
-			<!-- <header style="background-color:black; opacity: .8; border-radius: 10px; overflow: hidden; padding: 100px"> -->
+<!--			 <header style="background-color:black; opacity: .8; border-radius: 10px; overflow: hidden; padding: 100px"> -->
 			<header>
 				<h1>Brain over Brawn (BoB)</h1>
 				<p>IROS2024 Workshop on Label Efficient Learning Paradigms for Autonomy at Scale</p>
-
 			</header>
-			<a href="#abstract" class="more">Learn More</a>
+            <div class="inner">
+                <div class="button-row">
+                    <!-- <form action="https://arxiv.org/pdf/2309.06635.pdf" style="display: inline;"> -->
+                        <button type="submit" class="fancy-button-white"> 
+							<a href="#callforpaper" class="button-links">
+								<i>Call for Papers</i>
+								</a>
+							</a>
+						</button>
+                    <!-- </form> -->
+
+                    <!-- <form action="https://arxiv.org/abs/2309.06635" style="display: inline;"> -->
+                        <button type="submit" class="fancy-button-white">
+							<a href="#importantdates" class="button-links">
+								<i>Important Dates</i>
+							</a>
+						</button>
+                    <!-- </form> -->
+
+                    <!-- <form action="https://youtu.be/qbzQNz7_i8c?si=8ffZLJUUX2s_oIIz" style="display: inline;"> -->
+						<button type="submit" class="fancy-button-white">
+							<a href="#schedule" class="button-links">
+								<i>Schedule</i>
+							</a>
+						</button>
+                    <!-- </form> -->
+
+                    <!-- <form action="https://github.com/robot-learning-freiburg/CURB-SG" style="display: inline;"> -->
+                        <button type="submit" class="fancy-button-white">
+							<a href="#speakers" class="button-links">
+								<i>Speakers</i>
+							</a>
+						</button>
+                    <!-- </form> -->
+
+					<button type="submit" class="fancy-button-white">
+						<a href="#panelist" class="button-links">
+							<i>Panelists</i>
+						</a>
+					</button>
+
+                    <!-- <form action="#publication" style="display: inline;"> -->
+                        <button type="submit" class="fancy-button-white">
+							<a href="#people" class="button-links">
+								<i>Organizers</i>
+							</a>
+						</button>
+                    <!-- </form> -->
+                </div>
+            </div>
+			<!--<a href="#abstract" class="more">Learn More</a>-->
 		</div>
 	</section>
-
-    <!-- Quick Links-->
-	<div id="quick-links">
-		<div class="inner">
-            <div class="title">
-				<h2>Quick Links</h2>
-			</div>
-            <div class="button-row">
-                <form action="#callforpaper" style="display: inline;">
-                    <button type="submit" class="fancy-button-white">Call for Papers</button>
-                </form>
-                <form action="#importantdates" style="display: inline;">
-                    <button type="submit" class="fancy-button-white">Important Dates</button>
-                </form>
-                <form action="#schedule" style="display: inline;">
-                    <button type="submit" class="fancy-button-white">Schedule</button>
-                </form>
-                <form action="#speakers" style="display: inline;">
-                    <button type="submit" class="fancy-button-white">Speakers</button>
-                </form>
-                <!-- <form action="#grants" style="display: inline;">
-                    <button type="submit" class="fancy-button-white">Travel Grants</button>
-                </form> -->
-                <form action="#people" style="display: inline;">
-                    <button type="submit" class="fancy-button-white">Organizers</button>
-                </form>
-
-            </div>
-		</div>
-	</div>
 
     <div id="abstract">
 		<div class="inner">
@@ -101,15 +117,15 @@
                 </div>
             </div> -->
 
-            <div class="row">
+			<div class="row">
 				<div class="text-w">
-                    <p>
+					<p>
                         Recent advances in autonomous mobile robotics have enabled their deployment in a wide range of structured environments such as cities and warehouses where an abundance of manually labeled data is readily available to train existing deep learning algorithms. However, manual data annotation is financially prohibitive at large scales and also hinders the deployment of such algorithms in complex unstructured environments such as mines and burning buildings where labeled data is not readily available.
                     </p>
 
                     <br>
                     <p>
-						The goal of this workshop is to bring into spotlight, encourage, and analyze different robotics paradigms that can be leveraged to train models with limited supervision. Specifically, this workshop shall explore various works in the fields of self-supervised learning, zero-/few-shot/in-context learning, and transfer learning among others. Furthermore, this workshop also intends to investigate the use of rich feature representations generated by emergent foundation models such as DINO, CLIP, SAM, etc., to reduce or remove manual data annotation in existing training protocols. Through this workshop, we aim to provide a platform for researchers from various disciplines such as robotics, computer vision, and deep learning to exchange ideas and promote collaborations. Additionally, we desire to propel research in this exciting direction that would enable the large-scale deployment of autonomous robots in various facets of our day-to-day lives. This workshop will specifically aim to address the following <b>core questions</b>:
+						The goal of this workshop is to bring into spotlight, encourage, and analyze different robotics paradigms that can be leveraged to train models with limited supervision. Specifically, this workshop shall explore various works in the fields of self-supervised learning, zero-/few-shot/in-context learning, and transfer learning among others. Furthermore, this workshop also intends to investigate the use of rich feature representations generated by emergent foundation models such as DINO, CLIP, SAM, etc., to reduce or remove manual data annotation in existing training protocols. Through this workshop, we aim to provide a platform for researchers from various disciplines such as robotics, computer vision, and deep learning to exchange ideas and promote collaborations. Additionally, we desire to propel research in this exciting direction that would enable the large-scale deployment of autonomous robots in various facets of our day-to-day lives. This workshop will specifically aim to address the following <span style="font-weight: bold">core questions</span>:
 					</p>
 					<br>
 					<ul>
@@ -118,24 +134,21 @@
 						<li>Which research directions in computer vision and deep learning are beneficial for robotics, and which directions need significant reformulation?</li>
 						<li>How can the robotics community better utilize various breakthroughs in machine learning and deep learning?</li>
 					</ul>
-
-			    </div>
+				</div>
 			</div>
+
 		</div>
 	</div>
 
 
-	<!-- Batch3DMOT begin-->
 	<div id="callforpaper">
 		<div class="inner">
 			<div class="title">
 				<h2>Call for Papers</h2>
 			</div>
 
-            <br>
-
 			<div class="row">
-				<div class="text-w">
+				<div class="text">
                     <p>
 						The goal of this workshop is to create a forum that enables the free exchange of ideas between experts from various communities such as robotics, computer vision, and representation among others. As a result, we invite both early-career as well as experienced researchers to submit work focusing on, but not limited to, the following topics:
 					</p>
@@ -171,12 +184,8 @@
                 <br>
                 </div>
             </div>
-
-            
-
 		</div>
 	</div>
-
 
 	<div id="importantdates">
 		<div class="inner">
@@ -193,7 +202,7 @@
 				</div>
 			</div> -->
 			<div class="row">
-				<div class="text-w">
+				<div class="text">
                     <ul>
     					<li>Submissions open: TBD</li>
     					<li>Submission deadline: TBD</li>
@@ -214,6 +223,7 @@
 		</div>
 	</div>
 
+
 	<div id="schedule">
 		<div class="inner">
 			<div>
@@ -223,25 +233,25 @@
 				<div class="row">
 					<div class="text">
 						<!-- <ul class="alignMe">
-							<li><b>08:30am — 08:50am</b> Breakfast</li>
-							<li><b>08:50am — 09:00am</b> Introduction and opening remarks</li>
-							<li><b>09:00am — 09:30am</b> <b>Luca Carlone</b></li>
-							<li><b>09:30am — 10:00am</b> <b>Katerina Fragkiadaki</b></li>
-							<li><b>10:00am — 10:20am</b> Spotlight Talks</li>
-							<li><b>10:20am — 11:00am</b> Coffee break and poster session I</li>
-							<li><b>11:00am — 11:30pm</b> Invited Talk 3: <b>Adrien Gaidon</b></li>
-							<li><b>11:30am — 12:00pm</b> Invited Talk 4: <b>Fatma Güney</b> — “A Comparison of Potential Representations in Self-
+							<li><span style="font-weight: bold">08:30am — 08:50am</span> Breakfast</li>
+							<li><span style="font-weight: bold">08:50am — 09:00am</span> Introduction and opening remarks</li>
+							<li><span style="font-weight: bold">09:00am — 09:30am</span> <span style="font-weight: bold">Luca Carlone</span></li>
+							<li><span style="font-weight: bold">09:30am — 10:00am</span> <span style="font-weight: bold">Katerina Fragkiadaki</span></li>
+							<li><span style="font-weight: bold">10:00am — 10:20am</span> Spotlight Talks</li>
+							<li><span style="font-weight: bold">10:20am — 11:00am</span> Coffee break and poster session I</li>
+							<li><span style="font-weight: bold">11:00am — 11:30pm</span> Invited Talk 3: <span style="font-weight: bold">Adrien Gaidon</span></li>
+							<li><span style="font-weight: bold">11:30am — 12:00pm</span> Invited Talk 4: <span style="font-weight: bold">Fatma Güney</span> — “A Comparison of Potential Representations in Self-
 								Driving”</li>
-							<li><b>12:00pm — 01:00pm</b>  Lunch break</li>
-							<li><b>01:00pm — 01:30pm</b>  <b>K Madhava Krishna</b></li>
-							<li><b>01:30pm — 02:00pm</b>  <b>Yuexin Ma</b> — “Label-free learning and fine-grained understanding for Large
+							<li><span style="font-weight: bold">12:00pm — 01:00pm</span>  Lunch break</li>
+							<li><span style="font-weight: bold">01:00pm — 01:30pm</span>  <span style="font-weight: bold">K Madhava Krishna</span></li>
+							<li><span style="font-weight: bold">01:30pm — 02:00pm</span>  <span style="font-weight: bold">Yuexin Ma</span> — “Label-free learning and fine-grained understanding for Large
 								-scale 3D Scenes”</li>
-							<li><b>02:00pm — 02:30pm</b>   Spotlight Talks</li>
-							<li><b>02:30pm — 03:15pm</b>   Coffee break and poster session II</li>
-							<li><b>03:15pm — 03:45pm</b>  <b>Peyman Moghadam</b> — “Representation Learning for re-Localisation: From Incremental Learning to Test-time Adaptation”</li>
-							<li><b>03:45pm — 04:15pm</b>   Invited Talk 8</li>
-							<li><b>04:15pm — 05:00pm</b>   Panel discussion</li>
-							<li><b>05:00pm — 05:05pm</b>   Closing remarks</li>
+							<li><span style="font-weight: bold">02:00pm — 02:30pm</span>   Spotlight Talks</li>
+							<li><span style="font-weight: bold">02:30pm — 03:15pm</span>   Coffee break and poster session II</li>
+							<li><span style="font-weight: bold">03:15pm — 03:45pm</span>  <span style="font-weight: bold">Peyman Moghadam</span> — “Representation Learning for re-Localisation: From Incremental Learning to Test-time Adaptation”</li>
+							<li><span style="font-weight: bold">03:45pm — 04:15pm</span>   Invited Talk 8</li>
+							<li><span style="font-weight: bold">04:15pm — 05:00pm</span>   Panel discussion</li>
+							<li><span style="font-weight: bold">05:00pm — 05:05pm</span>   Closing remarks</li>
 						</ul>
 					</div> -->
 					<table>
@@ -262,17 +272,17 @@
 						</tr>
 						<tr>
 							<td>08:00am — 08:30am</td>
-							<td><b>Luca Carlone</b></td>
+							<td><span style="font-weight: bold">Luca Carlone</span></td>
 							<td>TBD</td>
 						</tr>
 						<tr>
 							<td>08:30am — 09:00am</td>
-							<td><b>Adrien Gaidon</b></td>
+							<td><span style="font-weight: bold">Adrien Gaidon</span></td>
 							<td>TBD</td>
 						</tr>
 						<tr>
 							<td>09:00am — 09:30am</td>
-							<td><b>Fatma Güney</b></td>
+							<td><span style="font-weight: bold">Fatma Güney</span></td>
 							<td>A Comparison of Potential Representations in Self-Driving</td>
 						</tr>
 						<tr>
@@ -292,12 +302,12 @@
 						</tr>
 						<tr>
 							<td>11:15am — 11:45am</td>
-							<td><b>Peyman Moghadam</b></td>
+							<td><span style="font-weight: bold">Peyman Moghadam</span></td>
 							<td>Representation Learning for re-Localisation: From Incremental Learning to Test-time Adaptation</td>
 						</tr>
 						<tr>
 							<td>11:45am — 12:15pm</td>
-							<td><b>Marija Popović</b></td>
+							<td><span style="font-weight: bold">Marija Popović</span></td>
 							<td>TBD</td>
 						</tr>
 						<tr>
@@ -311,7 +321,8 @@
 		</div>
 	</div>
 
-    	<!-- Technical approach begin -->
+
+	<!-- Publication begin -->
     <div id="speakers">
         <div class="inner">
             <div class="title">
@@ -351,6 +362,7 @@
 			</div>
         </div>
     </div>
+
 
 	<div id="panelist">
         <div class="inner">
@@ -461,49 +473,23 @@
 			</div>
 		</div>
 	</div>
-	<!-- People end -->
-
-    <!-- <div id="acknowledgement">
-		<div class="inner">
-			<div >
-				<div class="title">
-					<h2>Sponsors</h2>
-				</div>
-				<div class = "text-w">
-		            <p> TODO </p>
-		        </div>
-			</div>
-		</div>
-	</div> -->
 
 
-
-	<!-- Footer -->
-	<!-- <footer id="footer">
-		<div class="inner">
-			<p>
-				Contact: <a href="mailto:gosalan@cs.uni-freiburg.de">gosalan@cs.uni-freiburg.de</a><br>
-				&copy; Robot Learning Lab, University of Freiburg,
-				<span id="copyright">
-					<script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
-				</span>.
-				All rights reserved.
-			</p>
-		</div>
-	</footer> -->
+    <!-- Acknowledgment start -->
+    
+    <!-- Acknowledgment end -->
 
 
 	<!-- Scripts -->
-	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-
-	<script src="static/js/jquery.poptrox.min.js"></script>
+	<script src="static/thirdparty/jquery-3.7.1/jquery.min.js"></script>
+	<script src="static/thirdparty/slick-1.8.1/slick.min.js"></script>
 
 	<script src="static/js/carousel.js"></script>
-	<script type="text/javascript" src="static/slick/slick.min.js"></script>
 	<script src="static/js/main.js"></script>
-	<script type="text/javascript">imageSetter();</script>
+
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+	<!-- Footer -->
 
 </body>
 

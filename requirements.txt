@@ -1,6 +1,4 @@
 flask
-h5py
-six
 tornado
 Pillow
 scipy
