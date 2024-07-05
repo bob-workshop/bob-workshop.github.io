@@ -2942,9 +2942,9 @@ only screen and (min-width: 1400px) {
 /*======================================
     Speakers CSS
 ========================================*/
-.speakers {
+/* .speakers {
   background-color: #fff;
-}
+} */
 
 .speakers img {
   max-width: 100%;
@@ -3477,6 +3477,17 @@ only screen and (min-width: 1400px) {
 /* #dates-section {
   background-color: #f4f7fa;
 } */
+
+#sponsor-sec {
+  background-color: #f4f7fa;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#sponsor-title{
+  /* margin-top: 30px; */
+  margin-bottom: 0px;
+}
 
 .section:nth-child(2n) {
   background-color: #f4f7fa;
