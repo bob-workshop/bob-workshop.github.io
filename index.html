@@ -1,521 +1,1442 @@
-<!DOCTYPE HTML>
-
-<html>
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
 
 <head>
-	<title>BoB Workshop</title>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>BoB Workshop: Label Efficient Learning Paradigms for Autonomy at Scale</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<meta charset="utf-8" />
-	<link rel="icon" type="image/x-icon" href="static/images/logos/favicon.svg" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" />
-
-	<link rel="stylesheet" href="static/css/main.css" />
-
-	<link rel="stylesheet" href="static/thirdparty/slick-1.8.1/slick.css" />
-	<link rel="stylesheet" href="static/thirdparty/slick-1.8.1/slick-theme.css" />
-
-	<link rel="stylesheet" href="static/thirdparty/fontawesome-6.4.2/css/fontawesome.min.css" />
-	<link rel="stylesheet" href="static/thirdparty/fontawesome-6.4.2/css/brands.min.css" />
-	<link rel="stylesheet" href="static/thirdparty/fontawesome-6.4.2/css/solid.min.css" />
+    <!-- ========================= CSS here ========================= -->
+    <link rel="stylesheet" href="css/css-bootstrap.min.css">
+    <link rel="stylesheet" href="css/css-LineIcons.3.0.css">
+    <link rel="stylesheet" href="css/css-animate.css">
+    <link rel="stylesheet" href="css/css-tiny-slider.css">
+    <link rel="stylesheet" href="css/css-main.css">
 </head>
 
-<body id="top">
+<!-- Google tag (gtag.js) -->
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-F50BC5GG8Y"></script> -->
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-F50BC5GG8Y');
+</script>
 
-	<section id="banner">
-         <!-- <div class="logos">
-            <div class="row">
-				 <a href="https://rl.uni-freiburg.de"><img src="static/images/logos/ufr_blue_full.svg" alt="UFR Logo" style="height: 100%;" /></a>
-				<img src="static/images/logos/ellis_freiburg_black.png" alt="ELLIS Freiburg Logo" />
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-icon">
+                <span></span>
+                <span></span>
             </div>
-        </div> -->
+        </div>
+    </div>
+    <!-- /End Preloader -->
 
-		<!-- <video autoplay muted loop id="myVideo">
-			<source src="static/images/icra24_logo.webp">
-		</video> -->
-
-		<div class="image-big" id="myVideo">
-			<img src="static/images/figures/iros24_logo.webp" width="100%" height="100%"/>
-		</div>
-
-        <!-- <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" poster="static/images/figures/iros24_logo.webp">
-            <source src="static/images/figures/iros24_logo.webp" />
-        </video> -->
-
-		<div class="inner">
-<!--			 <header style="background-color:black; opacity: .8; border-radius: 10px; overflow: hidden; padding: 100px"> -->
-			<header>
-				<h1>Brain over Brawn (BoB)</h1>
-				<p>IROS2024 Workshop on Label Efficient Learning Paradigms for Autonomy at Scale</p>
-			</header>
-            <div class="inner">
-                <div class="button-row">
-                    <button type="submit" class="fancy-button-white"> 
-						<a href="#callforpaper" class="button-links">
-							<i>Call for Papers</i>
-							</a>
-						</a>
-					</button>
-
-                    <button type="submit" class="fancy-button-white">
-						<a href="#importantdates" class="button-links">
-							<i>Important Dates</i>
-						</a>
-					</button>
-
-					<button type="submit" class="fancy-button-white">
-						<a href="#schedule" class="button-links">
-							<i>Schedule</i>
-						</a>
-					</button>
-
-                    <button type="submit" class="fancy-button-white">
-						<a href="#speakers" class="button-links">
-							<i>Speakers</i>
-						</a>
-					</button>
-
-					<button type="submit" class="fancy-button-white">
-						<a href="#panelist" class="button-links">
-							<i>Panelists</i>
-						</a>
-					</button>
-
-                    <button type="submit" class="fancy-button-white">
-						<a href="#people" class="button-links">
-							<i>Organizers</i>
-						</a>
-					</button>
-
-					<button type="submit" class="fancy-button-white">
-						<a href="#sponsor" class="button-links">
-							<i>Sponsors</i>
-						</a>
-					</button>
-                </div>
-            </div>
-			<!--<a href="#abstract" class="more">Learn More</a>-->
-		</div>
-	</section>
-
-    <div id="abstract">
-		<div class="inner">
-            <div class="title">
-				<h2>Abstract</h2>
-			</div>
-            <!-- <div class="row">
-                <div class="text-w">
-			        <div class="image-big">
-                        <img src="static/images/motivation_website.png" alt="Teaser Image" width="100%" height="100%"/>
+    <!-- Start Header Area -->
+    <header class="header navbar-area">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <div class="nav-inner">
+                        <!-- Start Navbar -->
+                        <nav class="navbar navbar-expand-lg">
+                            <a class="navbar-brand" href="index.html">
+                                <img src="images/BoB-logo.png" alt="Logo">
+                            </a>
+                            <button class="navbar-toggler mobile-menu-btn" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+                                <ul id="nav" class="navbar-nav ms-auto">
+                                    <li class="nav-item">
+                                        <a id="home-nav" href="#home-section" class="active"
+                                            onclick="switch_nav(MainNav.Home)" aria-label="Toggle navigation">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a id="overview-nav" href="#overview-section"
+                                            onclick="switch_nav(MainNav.Submission)"
+                                            aria-label="Toggle navigation">Overview</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a id="submission-nav" href="#submission-section"
+                                            onclick="switch_nav(MainNav.Submission)"
+                                            aria-label="Toggle navigation">Paper submission</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a id="speakers-nav" href="#speakers-section"
+                                            onclick="switch_nav(MainNav.Speakers)"
+                                            aria-label="Toggle navigation">Speakers</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a id="panelist-nav" href="#panelist-section"
+                                            onclick="switch_nav(MainNav.Panelist)"
+                                            aria-label="Toggle navigation">Panelist</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a id="organizers-nav" href="#organizers-section"
+                                            onclick="switch_nav(MainNav.Organizers)"
+                                            aria-label="Toggle navigation">Organizers</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a id="dates-nav" href="#dates-section" onclick="switch_nav(MainNav.Dates)"
+                                            aria-label="Toggle navigation">Dates</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a id="schedule-nav" href="#schedule-section"
+                                            onclick="switch_nav(MainNav.Schedule)"
+                                            aria-label="Toggle navigation">Program</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a id="contact-nav" href="mailto:bob-workshop-orga@googlegroups.com"
+                                            aria-label="Toggle navigation">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
                     </div>
                 </div>
-            </div> -->
+            </div>
+        </div>
+    </header>
+    <!-- End Header Area -->
 
-			<div class="row">
-				<div class="text-w">
-					<p>
-                        Recent advances in autonomous mobile robotics have enabled their deployment in a wide range of structured environments such as cities and warehouses where an abundance of manually labeled data is readily available to train existing deep learning algorithms. However, manual data annotation is financially prohibitive at large scales and also hinders the deployment of such algorithms in complex unstructured environments such as mines and burning buildings where labeled data is not readily available.
-                    </p>
+    <!-- Start Hero Area -->
+    <section class="hero-area" id="home-section">
+        <div class="main__circle"></div>
+        <div class="main__circle2"></div>
+        <div class="main__circle3"></div>
+        <div class="main__circle4"></div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-10 offset-lg-1 col-md-12 col-12">
+                    <div class="hero-content">
+                        <h5 class="wow zoomIn" data-wow-delay=".2s"><i class="lni lni-map-marker"></i> IROS 2024 -
+                            ADNEC, Abu Dhabi, UAE, 14th of October 2024</h5>
+                        <h1 class="wow fadeInUp" data-wow-delay=".4s">Brain over Brawn (BoB)<br/></h1>
+                        <h2 class="wow fadeInUp" data-wow-delay=".4s">Workshop on Label Efficient Learning Paradigms for Autonomy at Scale</h2>
+                        <p class="wow fadeInUp" data-wow-delay=".6s">Workshop on Label Efficient Learning Paradigms for Autonomy at Scale, hosted
+                            at <a href="https://iros2024-abudhabi.org/">#IROS2024</a>.</p>
+                        <p class="wow fadeInUp" data-wow-delay=".6s">IROS conference site: <a
+                                href="https://iros2024-abudhabi.org/">https://iros2024-abudhabi.org/</a>
+                            (requires IROS registration)</p>
 
-                    <br>
-                    <p>
-						The goal of this workshop is to bring into spotlight, encourage, and analyze different robotics paradigms that can be leveraged to train models with limited supervision. Specifically, this workshop shall explore various works in the fields of self-supervised learning, zero-/few-shot/in-context learning, and transfer learning among others. Furthermore, this workshop also intends to investigate the use of rich feature representations generated by emergent vision foundation models such as DINO, CLIP, SAM, etc., to reduce or remove manual data annotation in existing training protocols. Through this workshop, we aim to provide a platform for researchers from various disciplines such as robotics, computer vision, and deep learning to exchange ideas and promote collaborations. Additionally, we desire to propel research in this exciting direction that would enable the large-scale deployment of autonomous robots in various facets of our day-to-day lives. This workshop will specifically aim to address the following core questions:
-					</p>
-					<br>
-					<ul>
-						<li>What are the real-world limitations of largely relying on labeled data?</li>
+                        <div class="button wow fadeInUp" data-wow-delay=".8s">
+                            <a href="#overview-section" class="btn ">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Hero Area -->
+
+    <!-- Start Count Down Area -->
+    <div class="count-down">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="box-head">
+                        <div class="box-content">
+                            <div class="box">
+                                <h1 id="days">000</h1>
+                                <h2 id="daystxt">Days</h2>
+                            </div>
+                            <div class="box">
+                                <h1 id="hours">00</h1>
+                                <h2 id="hourstxt">Hours</h2>
+                            </div>
+                            <div class="box">
+                                <h1 id="minutes">00</h1>
+                                <h2 id="minutestxt">Minutes</h2>
+                            </div>
+                            <div class="box">
+                                <h1 id="seconds">00</h1>
+                                <h2 id="secondstxt">Seconds</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Count Down Area -->
+
+    <!-- Start Features Area -->
+
+
+    <section class="section abstract" id="section-abstract">
+    <div class="row" id="overview-section">
+        <div class="col-12">
+            <div class="section-title">
+                <br><br>
+                <h3 class="wow zoomIn" data-wow-delay=".2s">Overview</h3>
+                <h2 class="wow fadeInUp" data-wow-delay=".4s">Workshop Details</h2>
+            </div>
+
+            <div class="section-text-content">
+                Welcome to the
+                <a href="https://iros2024-abudhabi.org/" class="badge" style="background-color:#d20a78;">IROS 2024</a>
+                Workshop on Label Efficient Learning Paradigms for Autonomy at Scale!
+                <br><br>
+                Recent advances in autonomous mobile robotics have enabled their deployment in a wide range of structured environments such as cities and warehouses where an abundance of manually labeled data is readily available to train existing deep learning algorithms. However, manual data annotation is financially prohibitive at large scales and also hinders the deployment of such algorithms in complex unstructured environments such as mines and burning buildings where labeled data is not readily available.
+
+                <br><br>
+
+                The goal of this workshop is to bring into spotlight, encourage, and analyze different robotics paradigms that can be leveraged to train models with limited supervision. Specifically, this workshop shall explore various works in the fields of self-supervised learning, zero-/few-shot/in-context learning, and transfer learning among others. Furthermore, this workshop also intends to investigate the use of rich feature representations generated by emergent vision foundation models such as DINO, CLIP, SAM, etc., to reduce or remove manual data annotation in existing training protocols. Through this workshop, we aim to provide a platform for researchers from various disciplines such as robotics, computer vision, and deep learning to exchange ideas and promote collaborations. Additionally, we desire to propel research in this exciting direction that would enable the large-scale deployment of autonomous robots in various facets of our day-to-day lives. This workshop will specifically aim to address the following core questions:
+
+                <br><br>
+                <ul style="list-style-type: disc; padding-left: 20px;">
+                    <li>What are the real-world limitations of largely relying on labeled data?</li>
 						<li>What are the challenges of existing <i>learning with limited supervision</i> paradigms that prevent their widespread adoption in autonomous mobile robotics?</li>
 						<li>Which research directions in computer vision and deep learning are beneficial for robotics, and which directions need significant reformulation?</li>
 						<li>How can the robotics community better utilize various breakthroughs in machine learning and deep learning?</li>
-					</ul>
-				</div>
-			</div>
-
-		</div>
-	</div>
-
-
-	<div id="callforpaper">
-		<div class="inner">
-			<div class="title">
-				<h2>Call for Papers</h2>
-			</div>
-
-			<div class="row">
-				<div class="text">
-                    <p>
-						The goal of this workshop is to create a forum that enables the free exchange of ideas between experts from various communities such as robotics, computer vision, and representation among others. As a result, we invite both early-career as well as experienced researchers to submit work focusing on, but not limited to, the following topics:
-					</p>
-
-					<br>
-					
-						
-							<ul>
-								<li>Self-Supervised, Weakly-Supervised and Unsupervised Learning</li>
-								<li>Zero- and K-Shot Learning</li>
-								<!-- <li>Representation Learning</li> -->
-								<li>Leveraging Vision Foundation Models for Data-Efficient Learning</li>
-								<li>Transfer Learning</li>
-								<li>Knowledge Distillation (Cross-Modal, Cross-Domain, Teacher-Students, etc.)</li>
-								<li>Domain Adaptation</li>
-								<!-- <li>Multi-Modal Distillation</li> -->
-								<!-- <li>Continual Learning</li> -->
-								<!-- <li>Incremental Learning</li> -->
-								<li>Open World Learning</li>
-								<!-- <li>Active Learning</li> -->
-								<!-- <li>Something with v2v or v2x?</li> -->
-							</ul>
-
-					<p>
-						We invite you to submit high-quality research as a short paper (4 pages maximum). Page count exclude references (i.e., 4 + n). You are encouraged to use IROS's suggested paper <a href="http://ras.papercept.net/conferences/support/support.php">template</a> and upload a PDF. Aligned with IROS review guidelines, the review process will be single blind, i.e., the authors' names are not required to be anonymized. We encourage submissions of works-in-progress as well as recent works that are currently under review or have already been accepted elsewhere. Accepted papers will be made non-archival public through this website, and will be presented as posters during IROS2024 in Abu Dhabi, UAE, with a selected few in the spotlight lightning session.
-
-						Paper submission will open on 08 Jul, 2024.
-                    </p>
-
-                <br>
-                </div>
-            </div>
-			<div class="title">
-				<h2>Awards</h2>
-			</div>
-			<div class="row">
-				<div class="text">
-                    <p>
-						The three best posters presented during the workshop will be awarded with a physical GPU, sponsored by NVIDIA.
-					</p>
-                <br>
-                </div>
-            </div>
-		</div>
-	</div>
-
-	<div id="importantdates">
-		<div class="inner">
-			<div>
-				<div class="title">
-					<h2>Important Dates</h2>
-				</div>
-			</div>
-			<!-- <div class="row">
-				<div class="video">
-					<iframe class="video" src="https://www.youtube.com/embed/PGne5XG4f_8" frameborder="5"
-						allowfullscreen="" width="960" height="540">
-					</iframe>
-				</div>
-			</div> -->
-			<div class="row">
-				<div class="text">
-                    <ul>
-    					<li>Submissions open: 08 Jul, 2024</li>
-    					<li>Submission deadline: 10 Aug, 2024, 23:59 PST</li>
-    					<li>Decision notification: 15 Sep, 2024</li>
-    					<li>Camera ready deadline: 01 Oct, 2024, 23:59 PST</li>
-    					<li>Workshop: Oct. 14/15, 2024</li>
-					</ul>
-
-                    <br>
-                    <p>
-
-                    </p>
-
-                <br>
-                </div>
+                </ul>
+                <br><br>
             </div>
 
-		</div>
-	</div>
-
-
-	<div id="schedule">
-		<div class="inner">
-			<div>
-				<div class="title">
-					<h2>Tentative Schedule</h2>
-				</div>
-				<div class="row">
-					<div class="text">
-						<!-- <ul class="alignMe">
-							<li><span style="font-weight: bold">08:30am — 08:50am</span> Breakfast</li>
-							<li><span style="font-weight: bold">08:50am — 09:00am</span> Introduction and opening remarks</li>
-							<li><span style="font-weight: bold">09:00am — 09:30am</span> <span style="font-weight: bold">Luca Carlone</span></li>
-							<li><span style="font-weight: bold">09:30am — 10:00am</span> <span style="font-weight: bold">Katerina Fragkiadaki</span></li>
-							<li><span style="font-weight: bold">10:00am — 10:20am</span> Spotlight Talks</li>
-							<li><span style="font-weight: bold">10:20am — 11:00am</span> Coffee break and poster session I</li>
-							<li><span style="font-weight: bold">11:00am — 11:30pm</span> Invited Talk 3: <span style="font-weight: bold">Adrien Gaidon</span></li>
-							<li><span style="font-weight: bold">11:30am — 12:00pm</span> Invited Talk 4: <span style="font-weight: bold">Fatma Güney</span> — “A Comparison of Potential Representations in Self-
-								Driving”</li>
-							<li><span style="font-weight: bold">12:00pm — 01:00pm</span>  Lunch break</li>
-							<li><span style="font-weight: bold">01:00pm — 01:30pm</span>  <span style="font-weight: bold">K Madhava Krishna</span></li>
-							<li><span style="font-weight: bold">01:30pm — 02:00pm</span>  <span style="font-weight: bold">Yuexin Ma</span> — “Label-free learning and fine-grained understanding for Large
-								-scale 3D Scenes”</li>
-							<li><span style="font-weight: bold">02:00pm — 02:30pm</span>   Spotlight Talks</li>
-							<li><span style="font-weight: bold">02:30pm — 03:15pm</span>   Coffee break and poster session II</li>
-							<li><span style="font-weight: bold">03:15pm — 03:45pm</span>  <span style="font-weight: bold">Peyman Moghadam</span> — “Representation Learning for re-Localisation: From Incremental Learning to Test-time Adaptation”</li>
-							<li><span style="font-weight: bold">03:45pm — 04:15pm</span>   Invited Talk 8</li>
-							<li><span style="font-weight: bold">04:15pm — 05:00pm</span>   Panel discussion</li>
-							<li><span style="font-weight: bold">05:00pm — 05:05pm</span>   Closing remarks</li>
-						</ul>
-					</div> -->
-					<table>
-						<tr>
-							<th>Time</th>
-							<th>Event</th>
-							<th>Title</th>
-						</tr>
-						<!-- <tr>
-							<td>08:30am — 08:50am</td>
-							<td>Breakfast</td>
-							<td></td>
-						</tr> -->
-						<tr>
-							<td>08:30am — 08:45am</td>
-							<td>Introduction and opening remarks</td>
-							<td></td>
-						</tr>
-						<tr>
-							<td>08:45am — 09:15am</td>
-							<td><span style="font-weight: bold">Luca Carlone</span></td>
-							<td>TBD</td>
-						</tr>
-						<tr>
-							<td>09:15am — 09:45am</td>
-							<td><span style="font-weight: bold">Adrien Gaidon</span></td>
-							<td>TBD</td>
-						</tr>
-						<tr>
-							<td>09:45am — 10:15am</td>
-							<td><span style="font-weight: bold">Fatma Güney</span></td>
-							<td>A Comparison of Potential Representations in Self-Driving</td>
-						</tr>
-						<tr>
-							<td>10:15am — 10:30am</td>
-							<td>Spotlight Talks</td>
-							<td></td>
-						</tr>
-						<tr>
-							<td>10:30am — 11:00am</td>
-							<td>Coffee break and poster session</td>
-							<td></td>
-						</tr>
-						<tr>
-							<td>11:00am — 11:30pm</td>
-							<td>Panel Session</td>
-							<td>Research2Reality</td>
-						</tr>
-						<tr>
-							<td>11:30am — 12:00am</td>
-							<td><span style="font-weight: bold">Peyman Moghadam</span></td>
-							<td>Representation Learning for re-Localisation: From Incremental Learning to Test-time Adaptation</td>
-						</tr>
-						<tr>
-							<td>12:00am — 12:30pm</td>
-							<td><span style="font-weight: bold">Marija Popović</span></td>
-							<td>Active Learning Using Autonomous Robots</td>
-						</tr>
-						<tr>
-							<td>12:30pm — 12:40pm</td>
-							<td>Closing remarks and award session</td>
-							<td></td>
-						</tr>
-					</table>
-				</div>
-			</div>
-		</div>
-	</div>
-
-
-	<!-- Publication begin -->
-    <div id="speakers">
-        <div class="inner">
-            <div class="title">
-                <h2>Speakers</h2>
-            </div>
-            <div class="people-container">
-				<div class="people-box">
-					<a href="https://lucacarlone.mit.edu/"><img src="static/images/people/carlone.jpeg"
-							alt="Luca Carlone" style="border-radius: 50%; border: 3px solid #000000;" /></a>
-					<h4><a href="https://lucacarlone.mit.edu/">Luca Carlone</a></h4>
-						<h5>Associate Professor <br> MIT <br> USA </h5>
-				</div>
-				<div class="people-box">
-					<a href="https://adriengaidon.com/"><img src="static/images/people/gaidon.jpg"
-							alt="Adrien Gaidon" style="border-radius: 50%; border: 3px solid #000000;" /></a>
-					<h4><a href="https://adriengaidon.com/">Adrien Gaidon</a></h4>
-						<h5>Director of Machine Learning <br> TRI <br> USA </h5>
-				</div>
-				<div class="people-box">
-					<a href="https://mysite.ku.edu.tr/fguney/"><img src="static/images/people/guney.jpeg"
-							alt="Fatma Güney" style="border-radius: 50%; border: 3px solid #000000;" /></a>
-					<h4><a href="https://mysite.ku.edu.tr/fguney/">Fatma Güney</a></h4>
-						<h5>Assistant professor <br> Koç University <br> Türkiye </h5>
-				</div>
-				<div class="people-box">
-					<a href="https://people.csiro.au/m/p/peyman-moghadam"><img src="static/images/people/peyman.jpeg"
-							alt="Peyman Moghadam" style="border-radius: 50%; border: 3px solid #000000;" /></a>
-					<h4><a href="https://people.csiro.au/m/p/peyman-moghadam">Peyman Moghadam</a></h4>
-						<h5>Research Scientist <br> CSIRO Data61 <br> Australia </h5>
-				</div>
-				<div class="people-box">
-					<a href="https://dmar-bonn.com/authors/admin/"><img src="static/images/people/popovic.jpg"
-							alt="Marija Popović" style="border-radius: 50%; border: 3px solid #000000;" /></a>
-					<h4><a href="https://dmar-bonn.com/authors/admin/">Marija Popović</a></h4>
-						<h5>Junior Research Group Leader <br> University of Bonn <br> Germany </h5>
-				</div>
-			</div>
         </div>
     </div>
+    </div>
+    </section>
 
-
-	<div id="panelist">
-        <div class="inner">
-            <div class="title">
-                <h2>Panelists</h2>
+    <section class="section call for paper" id="section-call-for-paper">
+    <div class="row" id="submission-section">
+        <div class="col-12">
+            <div class="section-title">
+                <br><br>
+                <h3 class="wow zoomIn" data-wow-delay=".2s">Paper Submission</h3>
+                <h2 class="wow fadeInUp" data-wow-delay=".4s">Call for Papers</h2>
             </div>
-            <div class="people-container">
-				<div class="people-box">
-					<a href="https://web.stanford.edu/~bohg/"><img src="static/images/people/bohg.png"
-							alt="Jeannette Bohg" style="border-radius: 50%; border: 3px solid #000000;" /></a>
-					<h4><a href="https://web.stanford.edu/~bohg/">Jeannette Bohg</a></h4>
-						<h5>Assistant Professor <br> Stanford University <br> USA </h5>
-				</div>
-				<div class="people-box">
-					<a href="https://www.linkedin.com/in/marco-hutter"><img src="static/images/people/hutter.jpeg"
-							alt="Marco Hutter" style="border-radius: 50%; border: 3px solid #000000;" /></a>
-					<h4><a href="https://www.linkedin.com/in/marco-hutter">Marco Hutter</a></h4>
-						<h5>Associate Professor <br> ETH Zürich <br> Switzerland </h5>
-				</div>
-				<div class="people-box">
-					<a href="https://www.ipb.uni-bonn.de/people/cyrill-stachniss/index.html"><img src="static/images/people/stachniss.jpg"
-							alt="Cyrill Stachniss" style="border-radius: 50%; border: 3px solid #000000;" /></a>
-					<h4><a href="https://www.ipb.uni-bonn.de/people/cyrill-stachniss/index.html">Cyrill Stachniss</a></h4>
-						<h5>Full Professor <br> University of Bonn <br> Germany </h5>
-				</div>
-			</div>
+
+            <!-- Challenge section-->
+            <div class="section-text-content">
+                <h4>&#128218; Topics</h4>
+                <br><br>
+                The goal of this workshop is to create a forum that enables the free exchange of ideas between experts from various communities such as robotics, computer vision, and representation among others. As a result, we invite both early-career as well as experienced researchers to submit work focusing on, but not limited to, the following topics:
+                <br><br>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Self-Supervised, Weakly-Supervised and Unsupervised Learning</li>
+                    <li class="list-group-item">Zero- and K-Shot Learning</li>
+                    <li class="list-group-item">Leveraging Vision Foundation Models for Data-Efficient Learning</li>
+                    <li class="list-group-item">Transfer Learning</li>
+                    <li class="list-group-item">Knowledge Distillation (Cross-Modal, Cross-Domain, Teacher-Students, etc.)</li>
+                    <li class="list-group-item">Domain Adaptation</li>
+                    <li class="list-group-item">Open World Learning</li>
+                    
+                    <li class="list-group-item">...</li>
+                </ul>
+                <!-- <br> -->
+                <br>
+                <h4>&#128232; Submission</h4>
+                <br><br>
+                We invite you to submit high-quality research as a short paper (4 pages maximum). Page count exclude references (i.e., 4 + n). You are encouraged to use IROS's suggested paper <a href="http://ras.papercept.net/conferences/support/support.php">template</a> and upload a PDF. Aligned with IROS review guidelines, the review process will be single blind, i.e., the authors' names are not required to be anonymized. We encourage submissions of works-in-progress as well as recent works that are currently under review or have already been accepted elsewhere. Accepted papers will be made non-archival public through this website, and will be presented as posters during IROS2024 in Abu Dhabi, UAE, with a selected few in the spotlight lightning session.
+                <br><br>
+                Paper submissions will be handled with OpenReview through the following link: 
+                <br><br>
+                <a href="https://openreview.net/group?id=IEEE.org/IROS/2024/Workshop/BoB">BoB @ OpenReview</a>
+                <br><br>
+                <h4>&#129351; Awards</h4>
+                <br><br>
+                The three best posters presented during the workshop will be awarded with a physical GPU, sponsored by NVIDIA.
+                <br><br>
+
+            </div>
         </div>
     </div>
+    </div>
+    </section>
+    <!-- /End Features Area -->
+
+    <!-- Start Speakers Area -->
+    <section class="speakers section" id="speakers-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title">
+                        <h3 class="wow zoomIn" data-wow-delay=".2s"
+                            style="visibility: visible; animation-delay: 0.2s; animation-name: zoomIn;">Speakers</h3>
+                        <h2 class="wow fadeInUp" data-wow-delay=".4s"
+                            style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">Invited
+                            Speakers</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="all-speakers">
+                <div class="row text-center justify-content-center">
+                    <div class="col-lg-3 col-md-4 col-12 wow fadeInUp" data-wow-delay=".2s"
+                        style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+
+                        <div class="single-speaker">
+                            <div class="top-content">
+                                <div class="image">
+                                    <img alt="#" src="images/people/carlone.jpeg" style="border-radius: 50%; border: 3px solid #000000;"
+                                        onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);">
+                                </div>
+                                <ul class="social">
+                                    <li class="home">
+                                        <a href="https://lucacarlone.mit.edu/">
+                                            <i class="lni lni-home">
+                                            </i>
+                                        </a>
+                                    </li>
+                                    <li class="scholar">
+                                        <a href="https://scholar.google.com/citations?user=U4kKRdMAAAAJ">
+                                            <i class="lni lni-google"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="name">
+                                <h3><a href="https://lucacarlone.mit.edu/">Luca Carlone</a></h3>
+                                <span>Associate Professor</span>
+                                <span>MIT</span>
+                                <span>USA</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-12 wow fadeInUp" data-wow-delay=".2s"
+                        style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+
+                        <div class="single-speaker">
+                            <div class="top-content">
+                                <div class="image">
+                                    <img alt="#" src="images/speakers-gaidon.png" style="border-radius: 50%; border: 3px solid #000000;"
+                                        onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);">
+                                </div>
+                                <ul class="social">
+                                    <li class="home">
+                                        <a href="https://adriengaidon.com/">
+                                            <i class="lni lni-home">
+                                            </i>
+                                        </a>
+                                    </li>
+                                    <li class="scholar">
+                                        <a href="https://scholar.google.com/citations?user=2StUgf4AAAAJ">
+                                            <i class="lni lni-google"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="name">
+                                <h3><a href="https://adriengaidon.com/">Adrien Gaidon</a></h3>
+                                <span>Director of Machine Learning</span>
+                                <span>TRI</span>
+                                <span>USA</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-12 wow fadeInUp" data-wow-delay=".2s"
+                        style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+
+                        <div class="single-speaker">
+                            <div class="top-content">
+                                <div class="image">
+                                    <img alt="#" src="images/people/guney.jpeg" style="border-radius: 50%; border: 3px solid #000000;"
+                                        onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);">
+                                </div>
+                                <ul class="social">
+                                    <li class="home">
+                                        <a href="https://mysite.ku.edu.tr/fguney/">
+                                            <i class="lni lni-home">
+                                            </i>
+                                        </a>
+                                    </li>
+                                    <li class="scholar">
+                                        <a href="https://scholar.google.com/citations?user=g3UitywAAAAJ">
+                                            <i class="lni lni-google"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="name">
+                                <h3><a href="https://mysite.ku.edu.tr/fguney/">Fatma Güney</a></h3>
+                                <span>Assistant professor</span>
+                                <span>Koç University</span>
+                                <span>Türkiye</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
 
 
-	<!-- Technical approach end -->
+                <div class="row text-center justify-content-center">
 
-	<!-- Publications begin -->
-	<!-- <div id="grants">
-		<div class="inner">
-            <div class="title">
-                <h2>Travel Grants</h2>
+                    <div class="col-lg-3 col-md-4 col-12 wow fadeInUp" data-wow-delay=".2s"
+                        style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+
+                        <div class="single-speaker">
+                            <div class="top-content">
+                                <div class="image">
+                                    <img alt="#" src="images/people/peyman.jpeg" style="border-radius: 50%; border: 3px solid #000000;"
+                                        onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);">
+                                </div>
+                                <ul class="social">
+                                    <li class="home">
+                                        <a href="https://people.csiro.au/m/p/peyman-moghadam">
+                                            <i class="lni lni-home">
+                                            </i>
+                                        </a>
+                                    </li>
+                                    <li class="scholar">
+                                        <a href="https://scholar.google.com/citations?user=QAVcuWUAAAAJ">
+                                            <i class="lni lni-google"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="name">
+                                <h3><a href="https://people.csiro.au/m/p/peyman-moghadam">Peyman Moghadam</a></h3>
+                                <span>Research Scientist</span>
+                                <span>CSIRO Data61</span>
+                                <span>Australia</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-12 wow fadeInUp" data-wow-delay=".2s"
+                        style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+
+                        <div class="single-speaker">
+                            <div class="top-content">
+                                <div class="image">
+                                    <img alt="#" src="images/people/popovic.jpg" style="border-radius: 50%; border: 3px solid #000000;"
+                                        onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);">
+                                </div>
+                                <ul class="social">
+                                    <li class="home">
+                                        <a href="https://dmar-bonn.com/authors/admin/">
+                                            <i class="lni lni-home">
+                                            </i>
+                                        </a>
+                                    </li>
+                                    <li class="scholar">
+                                        <a href="https://scholar.google.com/citations?user=XON8iQoAAAAJ">
+                                            <i class="lni lni-google"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="name">
+                                <h3><a href="https://dmar-bonn.com/authors/admin/">Marija Popović</a></h3>
+                                <span>Junior Research Group Leader</span>
+                                <span>University of Bonn</span>
+                                <span>Germany</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div> -->
-	<!-- Publications end -->
+    </section>
+    <!-- End Speaker Area -->
 
 
-	<!-- People begin -->
-	<div id="people">
-		<div class="inner">
-			<div>
-				<div class="title">
-					<h2>Organizers</h2>
-				</div>
-			</div>
+    <!-- Start Panelist Area -->
+    <section class="panelist section" id="panelist-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title">
+                        <h3 class="wow zoomIn" data-wow-delay=".2s"
+                            style="visibility: visible; animation-delay: 0.2s; animation-name: zoomIn;">Panelist</h3>
+                        <h2 class="wow fadeInUp" data-wow-delay=".4s"
+                            style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">Invited
+                            Panelist</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="all-speakers">
+                <div class="row text-center justify-content-center">
+                    <div class="col-lg-3 col-md-4 col-12 wow fadeInUp" data-wow-delay=".2s"
+                        style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
 
-			<div class="people-container">
-				<div class="people-box">
-					<a href="https://rl.uni-freiburg.de/people/naumitch"><img src="static/images/people/mitchell_crop.png"
-							alt="Nicholas Autio Mitchell" style="border-radius: 50%; border: 3px solid #000000;" /></a>
-					<h4><a href="https://rl.uni-freiburg.de/people/naumitch">Nicholas Autio Mitchell </a></h4>
-					<h5>Senior Deep Learning Scientist <br> NVIDIA <br> Germany</h5>
-				</div>
-				<div class="people-box">
-					<a href="https://abursuc.github.io/"><img src="static/images/people/bursuc.jpg"
-							alt="Andrei Bursuc" style="border-radius: 50%; border: 3px solid #000000;"/></a>
-					<h4><a href="https://abursuc.github.io/">Andrei Bursuc</a></h4>
-					<h5> Research Scientist <br> Valeo <br> France </h5>
-				</div>
-				<div class="people-box">
-					<a href="https://rl.uni-freiburg.de/people/cattaneo"><img src="static/images/people/cattaneo.jpg"
-							alt="Daniele Cattaneo" style="border-radius: 50%; border: 3px solid #000000;"/></a>
-					<h4><a href="https://rl.uni-freiburg.de/people/cattaneo">Daniele Cattaneo</a></h4>
-					<h5>Research Group Leader <br> University of Freiburg <br> Germany</h5>
-				</div>
-				<div class="people-box">
-					<a href="https://hazeldoughty.github.io/"><img src="static/images/people/doughty.jpg"
-							alt="Hazel Doughty" style="border-radius: 50%; border: 3px solid #000000;"/></a>
-					<h4><a href="https://hazeldoughty.github.io/">Hazel Doughty</a></h4>
-					<h5> Assistant Professor <br> Leiden University <br> Netherlands </h5>
-				</div>
-				<div class="people-box">
-					<a href="https://rl.uni-freiburg.de/people/gosala"><img src="static/images/people/gosala.jpeg"
-							alt="Nikhil Gosala" style="border-radius: 50%; border: 3px solid #000000;" /></a>
-					<h4><a href="https://rl.uni-freiburg.de/people/gosala">Nikhil Gosala</a></h4>
-					<h5>PhD Student <br> University of Freiburg <br> Germany</h5>
-				</div>
-				<div class="people-box">
-					<a href="http://www2.informatik.uni-freiburg.de/~petek/"><img src="static/images/people/petek.jpg"
-							alt="Kürsat Petek" style="border-radius: 50%; border: 3px solid #000000;"/></a>
-					<h4><a href="http://www2.informatik.uni-freiburg.de/~petek/">Kürsat Petek</a></h4>
-					<h5>PhD Student <br> University of Freiburg <br> Germany</h5>
-				</div>
-				<div class="people-box">
-					<a href="https://fieldrobotics.engin.umich.edu/team"><img src="static/images/people/skinner.jpg"
-							alt="Katie Skinner" style="border-radius: 50%; border: 3px solid #000000;"/></a>
-					<h4><a href="https://fieldrobotics.engin.umich.edu/team">Katie Skinner</a></h4>
-					<h5> Assistant Professor <br> University of Michigan <br> USA</h5>
-				</div>
-				<div class="people-box">
-					<a href="https://www.linkedin.com/in/andreea-tulbure-a61b82b5"><img src="static/images/people/tulbure.jpeg"
-							alt="Andreea Tulbure" style="border-radius: 50%; border: 3px solid #000000;"/></a>
-					<h4><a href="https://www.linkedin.com/in/andreea-tulbure-a61b82b5">Andreea Tulbure</a></h4>
-					<h5> PhD Student <br> ETH Zürich <br> Switzerland </h5>
-				</div>
-				<div class="people-box">
-					<a href="http://rl.uni-freiburg.de/people/valada"><img src="static/images/people/valada.png"
-							alt="Abhinav Valada" style="border-radius: 50%; border: 3px solid #000000;"/></a>
-					<h4><a href="http://rl.uni-freiburg.de/people/valada">Abhinav Valada</a></h4>
-					<h5> Professor <br> University of Freiburg <br> Germany</h5>
-				</div>
-			</div>
-		</div>
-	</div>
+                        <div class="single-speaker">
+                            <div class="top-content">
+                                <div class="image">
+                                    <img alt="#" src="images/people/bohg.png" style="border-radius: 50%; border: 3px solid #000000;"
+                                        onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);">
+                                </div>
+                                <ul class="social">
+                                    <li class="home">
+                                        <a href="https://web.stanford.edu/~bohg/">
+                                            <i class="lni lni-home">
+                                            </i>
+                                        </a>
+                                    </li>
+                                    <li class="scholar">
+                                        <a href="https://scholar.google.com/citations?user=rjnJnEkAAAAJ">
+                                            <i class="lni lni-google"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="name">
+                                <h3><a href="https://web.stanford.edu/~bohg/">Jeannette Bohg</a></h3>
+                                <span>Assistant Professor</span>
+                                <span>Stanford University</span>
+                                <span>USA</span>
+                            </div>
+                        </div>
+                    </div>
 
-	<div id="sponsor">
-		<div class="inner">
-			<div>
-				<br>
-				<div class="title">
-					<h2>Sponsors</h2>
-				</div>
-				<div class="people-container">
-					<div class="people-box">
-						<a href="https://www.nvidia.com/"><img src="static/images/logos/nvidia.png"
-								alt="NVIDIA" /></a>
-					</div>
-					<div class="people-box">
-						<a href="https://www.ieee-ras.org/robot-learning/"><img src="static/images/logos/Robot Learning logo 500x500 copy.gif"
-								alt="RAS RL TC"/></a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+                    <div class="col-lg-3 col-md-4 col-12 wow fadeInUp" data-wow-delay=".2s"
+                        style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+
+                        <div class="single-speaker">
+                            <div class="top-content">
+                                <div class="image">
+                                    <img alt="#" src="images/people/hutter.jpeg" style="border-radius: 50%; border: 3px solid #000000;"
+                                        onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);">
+                                </div>
+                                <ul class="social">
+                                    <li class="home">
+                                        <a href="https://www.linkedin.com/in/marco-hutter">
+                                            <i class="lni lni-home">
+                                            </i>
+                                        </a>
+                                    </li>
+                                    <li class="scholar">
+                                        <a href="https://scholar.google.com/citations?user=DO3quJYAAAAJ">
+                                            <i class="lni lni-google"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="name">
+                                <h3><a href="https://www.linkedin.com/in/marco-hutter">Marco Hutter</a></h3>
+                                <span>Associate Professor</span>
+                                <span>ETH Zürich</span>
+                                <span>Switzerland</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-12 wow fadeInUp" data-wow-delay=".2s"
+                        style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+
+                        <div class="single-speaker">
+                            <div class="top-content">
+                                <div class="image">
+                                    <img alt="#" src="images/people/stachniss.jpg" style="border-radius: 50%; border: 3px solid #000000;"
+                                        onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);">
+                                </div>
+                                <ul class="social">
+                                    <li class="home">
+                                        <a href="https://www.ipb.uni-bonn.de/people/cyrill-stachniss/index.html">
+                                            <i class="lni lni-home">
+                                            </i>
+                                        </a>
+                                    </li>
+                                    <li class="scholar">
+                                        <a href="https://scholar.google.com/citations?user=8vib2lAAAAAJ">
+                                            <i class="lni lni-google"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="name">
+                                <h3><a href="https://www.ipb.uni-bonn.de/people/cyrill-stachniss/index.html">Cyrill Stachniss</a></h3>
+                                <span>Full professor</span>
+                                <span>University of Bonn</span>
+                                <span>Germany</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Speaker Area -->
+
+    <!-- Start Workshop Organizers Area -->
+    <section class="speakers organizers section" id="organizers-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title">
+                        <h3 class="wow zoomIn" data-wow-delay=".2s"
+                            style="visibility: visible; animation-delay: 0.2s; animation-name: zoomIn;">Organizers</h3>
+                        <h2 class="wow fadeInUp" data-wow-delay=".4s"
+                            style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">Workshop
+                            Organizers</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="all-speakers">
+                <div class="row text-center justify-content-center">
+                    <div class="col-lg-3 col-md-4 col-12 wow fadeInUp" data-wow-delay=".2s"
+                        style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+
+                        <div class="single-speaker">
+                            <div class="top-content">
+                                <div class="image">
+                                    <img alt="#" src="images/people/mitchell_crop.png" style="border-radius: 50%; border: 3px solid #000000;"
+                                        onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);">
+                                </div>
+                                <ul class="social">
+                                    <li class="home">
+                                        <a href="https://rl.uni-freiburg.de/people/naumitch">
+                                            <i class="lni lni-home">
+                                            </i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="name">
+                                <h3><a href="https://rl.uni-freiburg.de/people/naumitch">Nicholas Autio Mitchell</a></h3>
+                                <span>Senior Deep Learning Scientist</span>
+                                <span>NVIDIA</span>
+                                <span>Germany</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-12 wow fadeInUp" data-wow-delay=".2s"
+                        style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+
+                        <div class="single-speaker">
+                            <div class="top-content">
+                                <div class="image">
+                                    <img alt="#" src="images/people/bursuc.jpg" style="border-radius: 50%; border: 3px solid #000000;"
+                                        onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);">
+                                </div>
+                                <ul class="social">
+                                    <li class="home">
+                                        <a href="https://abursuc.github.io/">
+                                            <i class="lni lni-home">
+                                            </i>
+                                        </a>
+                                    </li>
+                                    <li class="scholar">
+                                        <a href="https://scholar.google.com/citations?user=HTfERCsAAAAJ">
+                                            <i class="lni lni-google"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="name">
+                                <h3><a href="https://abursuc.github.io/">Andrei Bursuc</a>
+                                </h3>
+                                <span>Research Scientist</span>
+                                <span>Valeo</span>
+                                <span>France</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-12 wow fadeInUp" data-wow-delay=".2s"
+                        style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+
+                        <div class="single-speaker">
+                            <div class="top-content">
+                                <div class="image">
+                                    <img alt="#" src="images/people/cattaneo.jpg" style="border-radius: 50%; border: 3px solid #000000;"
+                                        onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);">
+                                </div>
+                                <ul class="social">
+                                    <li class="home">
+                                        <a href="https://rl.uni-freiburg.de/people/cattaneo">
+                                            <i class="lni lni-home">
+                                            </i>
+                                        </a>
+                                    </li>
+                                    <li class="scholar">
+                                        <a href="https://scholar.google.com/citations?user=4Kif-mgAAAAJ">
+                                            <i class="lni lni-google"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="name">
+                                <h3><a href="https://rl.uni-freiburg.de/people/cattaneo">Daniele Cattaneo</a>
+                                </h3>
+                                <span>Research Group Leader</span>
+                                <span>University of Freiburg</span>
+                                <span>Germany</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row text-center justify-content-center">
+                        <div class="col-lg-3 col-md-4 col-12 wow fadeInUp" data-wow-delay=".2s"
+                            style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+
+                            <div class="single-speaker">
+                                <div class="top-content">
+                                    <div class="image">
+                                        <img alt="#" src="images/people/doughty.jpg" style="border-radius: 50%; border: 3px solid #000000;"
+                                            onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);">
+                                    </div>
+                                    <ul class="social">
+                                        <li class="home">
+                                            <a href="https://hazeldoughty.github.io/">
+                                                <i class="lni lni-home">
+                                                </i>
+                                            </a>
+                                        </li>
+                                        <li class="scholar">
+                                            <a
+                                                href="https://scholar.google.com/citations?user=b3koBVwAAAAJ">
+                                                <i class="lni lni-google"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="name">
+                                    <h3><a href="https://hazeldoughty.github.io/">Hazel Doughty</a>
+                                    </h3>
+                                    <span>Assistant Professor</span>
+                                    <span>Leiden University</span>
+                                    <span>Netherlands</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-12 wow fadeInUp" data-wow-delay=".2s"
+                            style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+
+                            <div class="single-speaker">
+                                <div class="top-content">
+                                    <div class="image">
+                                        <img alt="#" src="images/people/gosala.jpeg" style="border-radius: 50%; border: 3px solid #000000;"
+                                            onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);">
+                                    </div>
+                                    <ul class="social">
+                                        <li class="home">
+                                            <a href="https://rl.uni-freiburg.de/people/gosala">
+                                                <i class="lni lni-home">
+                                                </i>
+                                            </a>
+                                        </li>
+                                        <li class="scholar">
+                                            <a
+                                                href="https://scholar.google.com/citations?user=4ARz8DwAAAAJ">
+                                                <i class="lni lni-google"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="name">
+                                    <h3><a href="https://rl.uni-freiburg.de/people/gosala">Nikhil Gosala</a>
+                                    </h3>
+                                    <span>PhD Student</span>
+                                    <span>University of Freiburg</span>
+                                    <span>Germany</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-12 wow fadeInUp" data-wow-delay=".2s"
+                            style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+
+                            <div class="single-speaker">
+                                <div class="top-content">
+                                    <div class="image">
+                                        <img alt="#" src="images/people/petek.jpg" style="border-radius: 50%; border: 3px solid #000000;"
+                                            onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);">
+                                    </div>
+                                    <ul class="social">
+                                        <li class="home">
+                                            <a href="http://www2.informatik.uni-freiburg.de/~petek/">
+                                                <i class="lni lni-home">
+                                                </i>
+                                            </a>
+                                        </li>
+                                        <li class="scholar">
+                                            <a
+                                                href="https://scholar.google.com/citations?user=96SlLi8AAAAJ">
+                                                <i class="lni lni-google"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="name">
+                                    <h3><a href="http://www2.informatik.uni-freiburg.de/~petek/">Kürsat Petek</a>
+                                    </h3>
+                                    <span>PhD Student</span>
+                                    <span>University of Freiburg</span>
+                                    <span>Germany</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-12 wow fadeInUp" data-wow-delay=".2s"
+                            style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+
+                            <div class="single-speaker">
+                                <div class="top-content">
+                                    <div class="image">
+                                        <img alt="#" src="images/people/skinner.jpg" style="border-radius: 50%; border: 3px solid #000000;"
+                                            onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);">
+                                    </div>
+                                    <ul class="social">
+                                        <li class="home">
+                                            <a href="https://fieldrobotics.engin.umich.edu/team">
+                                                <i class="lni lni-home">
+                                                </i>
+                                            </a>
+                                        </li>
+                                        <li class="scholar">
+                                            <a
+                                                href="https://scholar.google.com/citations?user=DsN9c-YAAAAJ">
+                                                <i class="lni lni-google"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="name">
+                                    <h3><a href="https://fieldrobotics.engin.umich.edu/team">Katie Skinner</a>
+                                    </h3>
+                                    <span>Assistant Professor</span>
+                                    <span>University of Michigan</span>
+                                    <span>USA</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-12 wow fadeInUp" data-wow-delay=".2s"
+                            style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+
+                            <div class="single-speaker">
+                                <div class="top-content">
+                                    <div class="image">
+                                        <img alt="#" src="images/people/tulbure.jpeg" style="border-radius: 50%; border: 3px solid #000000;"
+                                            onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);">
+                                    </div>
+                                    <ul class="social">
+                                        <li class="home">
+                                            <a href="https://www.linkedin.com/in/andreea-tulbure-a61b82b5">
+                                                <i class="lni lni-home">
+                                                </i>
+                                            </a>
+                                        </li>
+                                        <li class="scholar">
+                                            <a
+                                                href="https://scholar.google.com/citations?user=p3MwhgYAAAAJ">
+                                                <i class="lni lni-google"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="name">
+                                    <h3><a href="https://www.linkedin.com/in/andreea-tulbure-a61b82b5">Andreea Tulbure</a>
+                                    </h3>
+                                    <span>PhD Student</span>
+                                    <span>ETH Zürich</span>
+                                    <span>Switzerland</span>
+                                </div>
+                            </div>
+                        </div>
 
 
-    <!-- Acknowledgment start -->
-    
-    <!-- Acknowledgment end -->
+                        <div class="col-lg-3 col-md-4 col-12 wow fadeInUp" data-wow-delay=".2s"
+                            style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+
+                            <div class="single-speaker">
+                                <div class="top-content">
+                                    <div class="image">
+                                        <img alt="#" style="border-radius: 50%; border: 3px solid #000000;" src="images/organizer-valada.jpeg"
+                                            onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);">
+                                    </div>
+                                    <ul class="social">
+                                        <li class="home">
+                                            <a href="https://rl.uni-freiburg.de/people/valada">
+                                                <i class="lni lni-home">
+                                                </i>
+                                            </a>
+                                        </li>
+                                        <li class="scholar">
+                                            <a href="https://scholar.google.com/citations?user=LcARjz0AAAAJ&hl=en">
+                                                <i class="lni lni-google"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="name">
+                                    <h3><a href="https://rl.uni-freiburg.de/people/valada">Abhinav Valada</a>
+                                    </h3>
+                                    <span>Professor</span>
+                                    <span>University of Freiburg</span>
+                                    <span>Germany</span>
+                                </div>
+                            </div>
+                        </div>
+                        <h5>Contact us at: <a href="mailto:bob-workshop-orga@googlegroups.com">bob-workshop-orga@googlegroups.com</a>
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Speaker Area -->
+
+    <!-- Start Challenge Area -->
+    <section class="events-schedule dates section" id="dates-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title">
+                        <h3 class="wow zoomIn" data-wow-delay=".2s"
+                            style="visibility: hidden; animation-delay: 0.2s; animation-name: none;">Dates</h3>
+                        <h2 class="wow fadeInUp" data-wow-delay=".4s"
+                            style="visibility: hidden; animation-delay: 0.4s; animation-name: none;">Timeline</h2>
+
+                        <div class="tab-pane fade show active" id="date-wshop" role="tabpanel"
+                            aria-labelledby="wshop-tab">
+                            <h6>Non-archival track:</h6>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="event">Event</th>
+                                        <th class="date">Date</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">Sumbission Open</th>
+                                        <td>08 Jul, 2024</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Submission </th>
+                                        <td>10 Aug, 2024 23:59 PST</td>
+                                        <!-- [NH] Alternatively this  -->
+                                        <!-- 
+                                        <td>
+                                            <table class="table">
+                                                <tr><td>Mar 22, 2024 23:59 PST </td></tr>
+                                                <tr><td>Mar 23, 2024 06:59 UTC </td></tr>
+                                                <tr><td>Mar 23, 2024 15:59 JST </td></tr>
+                                            </table>
+                                        </td> 
+                                        -->
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Notification</th>
+                                        <td>15 Sep, 2024 <br /></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Camera Ready</th>
+                                        <td>01 Oct, 2024</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Workshop</th>
+                                        <td><b>14/15 Oct, 2024</b></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="row">
+                <div class="col-lg-10 offset-lg-1 col-12">
+                    <div class="tab-content">
+                </div>
+            </div> -->
+        </div>
+    </section>
+    <!-- End Challenge Area -->
+
+    <!-- Start Schedule Area -->
+    <section class="events-schedule section" id="schedule-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title">
+                        <h3 class="wow zoomIn" data-wow-delay=".2s"
+                            style="visibility: visible; animation-delay: 0.2s; animation-name: zoomIn;">Program</h3>
+                        <h2 class="wow fadeInUp" data-wow-delay=".4s"
+                            style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">Workshop
+                            Program</h2>
+                        <p class="wow fadeInUp" data-wow-delay=".6s"
+                            style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">
+
+                            All invited talks, oral presentations and the panel discussion will take place in-person at
+                            IROS in Abu Dhabi, UAE with support for remote participation.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1 col-12">
+                    <div class="tab-content">
+                        <div class="tab-pane fade active show" id="three" role="tabpanel" aria-labelledby="three-tab">
+                            <div class="events-head">
+                                <div class="single-event">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-3 col-md-3 col-12">
+                                            <div class="date">
+                                                <h3>08:30</h3>
+                                                <p>Keynote<span>08:30 - 08:45</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-62 col-md-7 col-12">
+                                            <div class="event-info">
+                                                <div class="image">
+                                                    <img alt="#" src="images/mic.webp"
+                                                        onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);">
+                                                </div>
+                                                <div class="info">
+                                                    <h4>
+                                                        Opening Remarks
+                                                    </h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-2 col-12">
+                                            <div class="button">
+                                                <a class="btn disabled" href="javascript:void(0)">Watch video</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
 
-	<!-- Scripts -->
-	<script src="static/thirdparty/jquery-3.7.1/jquery.min.js"></script>
-	<script src="static/thirdparty/slick-1.8.1/slick.min.js"></script>
+                                <div class="single-event">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-3 col-md-3 col-12">
+                                            <div class="date">
+                                                <h3>08:45</h3>
+                                                <p>Keynote<span>08:45 - 09:15</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-62 col-md-7 col-12">
+                                            <div class="event-info">
+                                                <div class="image">
+                                                    <img alt="#" src="images/people/carlone.jpeg"
+                                                        onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);">
+                                                </div>
+                                                <div class="info">
+                                                    <h4>
+                                                        TBD
+                                                    </h4>
+                                                    <ul>
+                                                        <li><i class="lni lni-user"></i>
+                                                            <a href="https://lucacarlone.mit.edu/"
+                                                                class="btn">Luca Carlone, MIT</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-2 col-12">
+                                            <div class="button">
+                                                <a class="btn disabled" href="javascript:void(0)">Watch video</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
-	<script src="static/js/carousel.js"></script>
-	<script src="static/js/main.js"></script>
+                                <div class="single-event">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-3 col-md-3 col-12">
+                                            <div class="date">
+                                                <h3>09:15</h3>
+                                                <p>Keynote<span>09:15 - 09:45</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-62 col-md-7 col-12">
+                                            <div class="event-info">
+                                                <div class="image">
+                                                    <img alt="#" src="images/speakers-gaidon.png"
+                                                        onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);">
+                                                </div>
+                                                <div class="info">
+                                                    <h4>
+                                                        TBD
+                                                    </h4>
+                                                    <ul>
+                                                        <li><i class="lni lni-user"></i>
+                                                            <a href="https://adriengaidon.com/" class="btn">Adrien Gaidon,
+                                                                TRI</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-2 col-12">
+                                            <div class="button">
+                                                <a class="btn disabled" href="javascript:void(0)">Watch video</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+                                <div class="single-event">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-3 col-md-3 col-12">
+                                            <div class="date">
+                                                <h3>09:45</h3>
+                                                <p>Keynote<span>09:45 - 10:15</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-62 col-md-7 col-12">
+                                            <div class="event-info">
+                                                <div class="image">
+                                                    <img alt="#" src="images/people/guney.jpeg"
+                                                        onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);">
+                                                </div>
+                                                <div class="info">
+                                                    <h4>
+                                                        A Comparison of Potential
+                                                    </h4>
+                                                    <h4>
+                                                        Representations in Self-Driving
+                                                    </h4>
+                                                    <ul>
+                                                        <li><i class="lni lni-user"></i>
+                                                            <a href="https://mysite.ku.edu.tr/fguney/" class="btn">Fatma Güney,
+                                                                Koç University</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-2 col-12">
+                                            <div class="button">
+                                                <a class="btn disabled" href="javascript:void(0)">Watch video</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
-	<!-- Footer -->
+                                <div class="single-event">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-3 col-md-3 col-12">
+                                            <div class="date">
+                                                <h3>10:15</h3>
+                                                <p>Talks<span>10:15 - 10:30</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-62 col-md-7 col-12">
+                                            <div class="event-info">
+                                                <div class="image">
+                                                    <img alt="#" src="images/panel.jpg"
+                                                        onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);">
+                                                </div>
+                                                <div class="info">
+                                                    <h4>
+                                                        Spotlight Talks
+                                                    </h4>
+                                                    <ul>
+                                                        <li><i class="lni lni-user"></i>
+                                                            <a href="javascript:void(0)">Paper Authors</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-2 col-12">
+                                            <div class="button">
+                                                <a class="btn disabled" href="javascript:void(0)">Watch video</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
+
+                                <div class="single-event">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-3 col-md-3 col-12">
+                                            <div class="date">
+                                                <h3>10:30</h3>
+                                                <p>Break<span>10:30 - 11:00</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-62 col-md-7 col-12">
+                                            <div class="event-info">
+                                                <div class="image">
+                                                    <img alt="#" src="images/coffee_break.jpg"
+                                                        onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);">
+                                                </div>
+                                                <div class="info">
+                                                    <h4>
+                                                        Coffee Break and Poster Session
+                                                    </h4>
+                                                    <ul>
+                                                        <li><i class="lni lni-user"></i>
+                                                            <a href="javascript:void(0)">Poster Authors</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- <div class="col-lg-3 col-md-2 col-12">
+                                            <div class="button">
+                                                <a class="btn disabled" href="javascript:void(0)">Watch video</a>
+                                            </div>
+                                        </div> -->
+                                    </div>
+                                </div>
+
+                                <div class="single-event">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-3 col-md-3 col-12">
+                                            <div class="date">
+                                                <h3>11:00</h3>
+                                                <p>Discussion<span>11:00 - 11:30</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-62 col-md-7 col-12">
+                                            <div class="event-info">
+                                                <div class="image">
+                                                    <img alt="#" src="images/panel.jpg"
+                                                        onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);">
+                                                </div>
+                                                <div class="info">
+                                                    <h4>
+                                                        Panel Discussion
+                                                    </h4>
+                                                    <ul>
+                                                        <li><i class="lni lni-user"></i>
+                                                            <a href="#panelist-section" class="btn">Jeanette Bohg, Marco Hutter, Cyrill Stachniss</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-2 col-12">
+                                            <div class="button">
+                                                <a class="btn disabled" href="javascript:void(0)">Watch video</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="single-event">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-3 col-md-3 col-12">
+                                            <div class="date">
+                                                <h3>10:30</h3>
+                                                <p>Keynote<span>10:30 - 11:00</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-62 col-md-7 col-12">
+                                            <div class="event-info">
+                                                <div class="image">
+                                                    <img alt="#" src="images/people/peyman.jpeg"
+                                                        onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);">
+                                                </div>
+                                                <div class="info">
+                                                    <h4>
+                                                        Learning Generalizable Feature
+                                                    </h4>
+                                                    <h4>
+                                                        Fields for Mobile Manipulation
+                                                    </h4>
+                                                    <ul>
+                                                        <li><i class="lni lni-user"></i>
+                                                            <a href="https://people.csiro.au/m/p/peyman-moghadam" class="btn">Peyman Moghadam, CSIRO Data61</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-2 col-12">
+                                            <div class="button">
+                                                <a class="btn disabled" href="javascript:void(0)">Watch video</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="single-event">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-3 col-md-3 col-12">
+                                            <div class="date">
+                                                <h3>11:00</h3>
+                                                <p>Keynote<span>11:00 - 11:30</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-62 col-md-7 col-12">
+                                            <div class="event-info">
+                                                <div class="image">
+                                                    <img alt="#" src="images/people/popovic.jpg"
+                                                        onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);">
+                                                </div>
+                                                <div class="info">
+                                                    <h4>
+                                                        Building photorealistic simulators
+                                                    </h4>
+                                                    <h4>
+                                                        for autonomous driving
+                                                    </h4>
+                                                    <ul>
+                                                        <li><i class="lni lni-user"></i>
+                                                            <a href="https://dmar-bonn.com/authors/admin/" class="btn">Marija Popović,
+                                                                University of Bonn</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-2 col-12">
+                                            <div class="button">
+                                                <a class="btn disabled" href="javascript:void(0)">Watch video</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="single-event">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-3 col-md-3 col-12">
+                                            <div class="date">
+                                                <h3>12:30</h3>
+                                                <p>Keynote<span>12:30 - 12:40</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-62 col-md-7 col-12">
+                                            <div class="event-info">
+                                                <div class="image">
+                                                    <img alt="#" src="images/mic.webp"
+                                                        onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);">
+                                                </div>
+                                                <div class="info">
+                                                    <h4>
+                                                        Closing Remarks
+                                                    </h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-2 col-12">
+                                            <div class="button">
+                                                <a class="btn disabled" href="javascript:void(0)">Watch video</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Schedule Area -->
+
+    <section class="sponsor section" id="sponsor-sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title" id="sponsor-title">
+                        <h3 class="wow zoomIn" data-wow-delay=".2s"
+                            style="visibility: visible; animation-delay: 0.2s; animation-name: zoomIn;">Sponsors</h3>
+                        <!-- <h2 class="wow fadeInUp" data-wow-delay=".4s"
+                            style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">Invited
+                            Panelist</h2> -->
+                    </div>
+                </div>
+            </div>
+            <div class="all-speakers">
+                <div class="row text-center justify-content-center">
+                    <div class="col-lg-3 col-md-4 col-12 wow fadeInUp" data-wow-delay=".2s"
+                        style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+
+                        <div class="single-speaker">
+                            <div class="top-content">
+                                <div class="image">
+                                    <img alt="#" src="images/logos/nvidia.png"
+                                        onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-12 wow fadeInUp" data-wow-delay=".2s"
+                        style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+
+                        <div class="single-speaker">
+                            <div class="top-content">
+                                <div class="image">
+                                    <img src="images/logos/Robot Learning logo 500x500 copy.gif"
+                                    onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Start Footer Action Area -->
+    <section class="call-action overlay">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-10 offset-lg-1 col-md-12 col-12">
+                    <div class="inner-content">
+                        <div class="text">
+                            <p class="wow fadeInUp" data-wow-delay=".6s">Website template adapted from <a
+                                    href="https://robonerf.github.io/2024/index.html">RoboNerF</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Footer Action Area -->
+
+    <!-- ========================= scroll-top ========================= -->
+    <a href="#" class="scroll-top">
+        <i class="lni lni-chevron-up"></i>
+    </a>
+
+    <!-- ========================= JS here ========================= -->
+    <script src="js/js-bootstrap.min.js"></script>
+    <script src="js/js-wow.min.js"></script>
+    <script src="js/js-tiny-slider.js"></script>
+    <script src="js/js-count-up.min.js"></script>
+    <script src="js/js-main.js"></script>
+    <script>
+        const finaleDate = new Date("October 14, 2024 12:45:00").getTime();
+
+        const timer = () => {
+            const now = new Date().getTime();
+            let diff = finaleDate - now;
+            if (diff < 0) {
+                document.querySelector('.alert').style.display = 'block';
+                document.querySelector('.container').style.display = 'none';
+            }
+
+            let days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            let hours = Math.floor(diff % (1000 * 60 * 60 * 24) / (1000 * 60 * 60));
+            let minutes = Math.floor(diff % (1000 * 60 * 60) / (1000 * 60));
+            let seconds = Math.floor(diff % (1000 * 60) / 1000);
+
+            // days <= 99 ? days = `0${days}` : days;
+            // days <= 9 ? days = `00${days}` : days;
+            hours <= 9 ? hours = `0${hours}` : hours;
+            minutes <= 9 ? minutes = `0${minutes}` : minutes;
+            seconds <= 9 ? seconds = `0${seconds}` : seconds;
+
+            document.querySelector('#days').textContent = days;
+            document.querySelector('#hours').textContent = hours;
+            document.querySelector('#minutes').textContent = minutes;
+            document.querySelector('#seconds').textContent = seconds;
+
+        }
+        timer();
+        setInterval(timer, 1000);
+    </script>
 </body>
 
 </html>

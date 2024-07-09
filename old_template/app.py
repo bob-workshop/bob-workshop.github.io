@@ -8,7 +8,7 @@ import tornado.wsgi
 from flask import Flask, render_template
 
 # Obtain the flask app object
-app = Flask(__name__, template_folder="", static_folder="")
+app = Flask(__name__, template_folder="")
 
 
 def server_start(app: Flask, port: int):
@@ -22,10 +22,10 @@ def server_start(app: Flask, port: int):
     tornado.ioloop.IOLoop.current().start()
 
 
-# @app.route("/imprint")
-# def render_imprint():
-#     logging.info("render page: imprint")
-#     return render_template("imprint.html")
+@app.route("/imprint")
+def render_imprint():
+    logging.info("render page: imprint")
+    return render_template("imprint.html")
 
 
 @app.route("/")
