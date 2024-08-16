@@ -2987,6 +2987,13 @@ only screen and (min-width: 1400px) {
 	object-fit: cover;
 }
 
+.single-speaker .top-content .imagenocrop img {
+  width: 100%;
+	/* display: block; */
+	object-fit: cover;
+}
+
+
 .single-speaker .top-content .social {
   position: absolute;
   left: 50%;
