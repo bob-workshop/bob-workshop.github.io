@@ -1,5 +1,0 @@
-flask
-tornado
-Pillow
-scipy
-scikit-image
